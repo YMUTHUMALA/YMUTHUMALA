@@ -516,13 +516,13 @@ form .formbutton input:hover{
     background-position: center center;
 }
 .singlebox:nth-child(1) .imagearea{
-    background-image: url(images/64.webp);
+    background-image: url(IMAGES/64.webp);
 }
 .singlebox:nth-child(2) .imagearea{
-    background-image: url(images/63.webp);
+    background-image: url(IMAGES/63.webp);
 }
 .singlebox:nth-child(3) .imagearea{
-    background-image: url(images/62.webp);
+    background-image: url(IMAGES/62.webp);
 }
 
 .headertext{
