@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+.headerindex{
+    background-image: url(IMAGES/29.webp);
+    height: 60vh;
+    background-size: cover; 
+    opacity: 0.87; 
+}
+
+.mainheading{
+    color: #fff;
+    font-size: 60px;
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 50%;
+    transform:translate(-50%,50%);
+}
+nav{
+    display: flex;
+    padding: 2% 4%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nlinks{
+    flex: 1;
+    text-align: right; 
+      
+}
+
+.nlinks ul li{
+list-style: none;
+display: inline-block;
+padding: 8px 12px;
+position: relative;
+justify-content: flex-end;
+}
+
+.nlinks ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.nlinks ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.6s;
+}
+
+.nlinks ul li:hover::after{
+    width: 100%;
+}
+.Hlocations{
+    display: none;
+}
+
+.nlinks ul li:hover .Hlocations{
+    display: block;
+    position: absolute;
+    background: none;
+    margin-top: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 10px;
+    color: white;
+}
+
+/*HOME PAGE STYLING*/
+#footsteps{
+    padding-top: 10px;
+}
+
+.species{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.animals{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background: none;
+    margin-left: 45px;
+}
+
+.animalstyle{
+   padding: 20px;
+   padding-left: 25px;
+   size: 10px;
+   width: 30%;  
+   color:white;
+   background: #0e2433;
+   box-sizing: border-box;
+   border-radius: 10px;
+   margin: 10px;
+
+}
+
+.animalstyle h4 {
+    size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    
+}
+
+.animalstyle p {
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+.animalstyle img{
+    width: 300px;
+    height: 250px;
+    align-items: center;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 100%;
+}

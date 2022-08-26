@@ -1,0 +1,671 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+.headerindex{
+    background-image: url(IMAGES/29.webp);
+    height: 60vh;
+    background-size: cover; 
+    opacity: 0.87; 
+}
+
+.mainheading{
+    color: #fff;
+    font-size: 60px;
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 50%;
+    transform:translate(-50%,50%);
+}
+nav{
+    display: flex;
+    padding: 2% 4%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nlinks{
+    flex: 1;
+    text-align: right; 
+      
+}
+
+.nlinks ul li{
+list-style: none;
+display: inline-block;
+padding: 8px 12px;
+position: relative;
+justify-content: flex-end;
+}
+
+.nlinks ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.nlinks ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.6s;
+}
+
+.nlinks ul li:hover::after{
+    width: 100%;
+}
+.Hlocations{
+    display: none;
+}
+
+.nlinks ul li:hover .Hlocations{
+    display: block;
+    position: absolute;
+    background: none;
+    margin-top: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 10px;
+    color: white;
+}
+
+/*HOME PAGE STYLING*/
+.internalcontainer1 h3{
+    size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+        
+}
+    
+.internalcontainer1 p {
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+#footsteps{
+    padding-top: 10px;
+}
+
+.holdingcontainer{
+    display: flex;
+    width: 100%;
+    /*padding: 50px;
+    box-sizing: border-box;*/
+}
+
+.holdingcontainer section{
+    margin: 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border: 4px solid darkslategrey;
+    border-radius: 20px;
+    padding: 20px;   
+}
+
+@media (max-width: 1000px){
+    .holdingcontainer, .holdingcontainer section{
+        flex-direction: column;
+    }
+}
+
+.img3{
+    padding-top: 20px;
+}
+
+.holdingcontainer2{
+    display: flex;
+}
+
+.holdingcontainer2 section{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: start;
+    padding: 40px;
+    border: 4px solid darkslategrey;
+    border-radius: 20px;
+}
+
+.holdingcontainer3{
+    display: flex;
+
+}
+
+.holdingcontainer3 section{
+    margin: 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border: 4px solid darkslategrey;
+    border-radius: 20px;
+    padding: 20px;   
+}
+
+@media (max-width: 1000px){
+    .holdingcontainer3, .holdingcontainer3 section{
+        flex-direction: column;
+    }
+}
+
+/*FOOTER STYLING*/
+.foot{
+    margin-top: 5px;
+    margin-top: 5px;
+    width: 100%;
+    margin-right: 65px;
+    }
+.foot a{
+        font-size: 10px;
+        font-weight: 700;
+        text-decoration: inherit;
+    } 
+
+/*ATTRACTIONS STYLING*/ 
+.internalcontainer2 h3{
+    size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+        
+}
+    
+.internalcontainer2 p {
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+/*Attractions page button styling*/
+
+.internalcontainer2 button{
+    padding: 10px;
+    border-radius: 20px;
+    background: #0e2433;
+
+}
+.internalcontainer2 button a{
+    font-size: 12px;
+    color:white;
+    border-radius: 1px;
+    text-decoration: inherit;
+}   
+
+/*End of attractions page button styling*/
+
+/*Beaches page styling*/
+
+
+.internalcontainer3 button{
+    padding: 10px;
+    border-radius: 20px;
+    background: #0e2433;
+
+}
+.internalcontainer3 button a{
+    font-size: 12px;
+    color:white;
+    border-radius: 1px;
+    text-decoration: inherit;
+} 
+.internalcontainer3 h3{
+    size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+        
+}
+    
+.internalcontainer3 p {
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+/*End of beaches page button styling
+
+
+/*Activity page  styling*/
+.internalcontainer4 h3{
+    size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+        
+}
+    
+.internalcontainer4 p {
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
+internalcontainer4 h4 {
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+internalcontainer4 li {
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+.internalcontainer4 button{
+    padding: 10px;
+    border-radius: 20px;
+    background: #0e2433;
+
+}
+.internalcontainer4 button a{
+    font-size: 12px;
+    color:white;
+    border-radius: 1px;
+    text-decoration: inherit;
+}   
+
+/*End of activity page button styling*/
+
+
+/*Purchase and donate page styling*/
+.internalcontainer5{
+    border-color: white;
+}
+
+.internalcontainer5 button{
+    padding: 10px;
+    border-radius: 20px;
+    background: #0e2433;
+
+}
+.internalcontainer5 button a{
+    font-size: 12px;
+    color:white;
+    border-radius: 1px;
+    text-decoration: inherit;
+} 
+.internalcontainer5 h3{
+    size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+        
+}
+    
+.internalcontainer5 p {
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+} 
+
+/*End of purchase and donate page styling*/
+
+/*TABLE STYLING*/
+table , th , tr td{
+    border: solid;
+    color: black 1px;
+}
+
+td{
+    padding: 80px;
+}
+
+.table{
+    width: 100%;
+    height: auto;
+}
+
+table{
+    border-collapse: collapse;
+
+}
+/*end of table page styling*/
+
+/*PINNAWALA AND SINHARAJA PAGE STYLING*/
+.wildlifehead{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+.wildlifehead h2{
+    font-size: 40px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+.wildlifehead img{
+    width: 150px;
+    float: left;
+}
+
+.grid1{
+    padding: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #f2f2f2;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-auto-rows: 400px;
+    grid-auto-flow: dense;
+}
+
+.v-stretch{
+    grid-row: span 2;
+}
+
+.h-stretch{
+    grid-column: span 2;
+}
+
+.big-stretch{
+     grid-row: span 2;
+     grid-column: span 2;
+}
+
+.grid1 div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media(max-width: 560px)
+{
+    .v-stretch{
+        grid-row: span 1;
+    }
+    .h-stretch{
+        grid-column: span 1;
+    }
+    .big-stretch{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+.locationstyle{
+    margin: 2%;
+}
+
+.mapstyle{
+    display: block;
+    width: 95vw;
+    height: 300px;
+    align-items: center;
+    margin: 1em auto;
+    box-shadow: 2px 2px 2px gainsboro;
+    border-radius: 6px;
+}
+/*end of pinnawala and sinharaja page styling*/
+
+/*FORM STYLING*/
+
+.formstyle{
+    display: flex;
+    height: 140vh;
+    justify-content: center;
+    align-items: center;
+    background: darkslategrey;
+}
+.donationform{
+    max-width: 500px;
+    width: 100%;
+    background:white;
+    padding: 30px 30px;
+    border-radius: 10px;
+}
+.heading{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px;
+    text-align: left;
+    color:white ;
+}
+
+.donationform form .donatedetails{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+    margin: 20px 0 12px o;
+}
+form .donatedetails .inputbox{
+ width: calc(100%/2 - 20px);
+ margin-bottom: 10px;
+}
+.donatedetails .inputbox input{
+    height: 26px;
+    width: 370px; 
+    outline:none ;
+    border-radius: 5px;
+    border: #0e2433 solid;
+    padding-left: 6px;
+    font-size: 15px;
+}
+.donatedetails .inputbox input:focus,
+.donatedetails .inputbox input:valid{
+    border-color: black ;
+}
+
+form .formbutton{
+    height: 25px;
+    margin: 10px 0;
+    
+}
+form .formbutton input{
+    height: 100%;
+    width: 50%;
+    outline:none ;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+    background:darkblue;
+    color: white;
+}
+form .formbutton input:hover{
+    background: grey;
+}
+/*end of form page styling*/
+
+/*Purchase and donate styling*/
+.boxarea{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.singlebox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    border-radius: 25px;
+    background-color:black;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: 3s;
+
+}
+
+.imagearea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 20px;
+    -webkit-background-size:cover ;
+    background-size: cover;
+    background-position: center center;
+}
+.singlebox:nth-child(1) .imagearea{
+    background-image: url(images/64.webp);
+}
+.singlebox:nth-child(2) .imagearea{
+    background-image: url(images/63.webp);
+}
+.singlebox:nth-child(3) .imagearea{
+    background-image: url(images/62.webp);
+}
+
+.headertext{
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 48px;
+}
+.imagetext button{
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+     background: #0e2433;
+     align-items: flex-end;
+}
+.imagetext button a{
+        font-size: 12px;
+        color:white;
+        border-radius: 1px;
+        text-decoration: inherit;
+} 
+
+.singlebox:hover{
+    background: white;
+    color: black;
+}
+
+.todonate{
+   width: 100%;
+   padding-top: 20px;
+   padding-bottom: 10px;
+   align-items: center;
+   justify-content: center;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+.todonate img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    height: 500px;
+    border-radius: 30px;
+}
+.amount{
+    margin: 10px;
+    justify-content: space-between;
+    width: 60%;
+}
+.amount button{
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+     background: #0e2433;
+     align-items: flex-end;
+}
+.amount button a{
+        font-size: 12px;
+        color:white;
+        border-radius: 1px;
+        text-decoration: inherit;
+        transition: 1s;
+} 
+
+.amount button:hover{
+    color: black;
+    background-color: white;
+}
+.amount button a:hover{
+    color: #0e2433;
+}
+
+
+mmmmmmmmmmmm
+
+
+
+.box-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    border-radius: 4px;
+    background-color: #fff;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: .3s;
+}
+
+.img-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125pxpx;
+    height: 125px;
+    border: 4px solid white;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 20px;
+    -webkit-background-size:cover ;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.single-box:nth-child(1) .img-area{
+    background-image: url(1.webp);
+}
+.single-box:nth-child(2) .img-area{
+    background-image: url(1.webp);
+}
+.single-box:nth-child(3) .img-area{
+    background-image: url(1.webp);
+}
+
+.header-text{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 48px;
+}
+
+.img-text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 20px;
+}
+
+.img-text p{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.single-box:hover{
+    background: black;
+    color: #fff;
+}
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width,initial-scale=1.0">
+        <title>Tourist Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+              <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+              <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+              <link rel="manifest" href="/site.webmanifest">
+              <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+              <meta name="msapplication-TileColor" content="#da532c">
+              <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <header class="headerindex">
+        
+          <div class="nlinks"> 
+            <nav>
+               
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="attraction.html">WILDLIFE</a></li>
+                    <li><a href="beaches.html">BEACHES</a></li>
+                    <li><a href="activities.html">ACTIVITIES</a></li>
+                    <li><a href="index.html">HERITAGE</a>
+                       <div class="Hlocations">
+                          <ul>
+                               <li><a href="adamspeak.html">ADAMS' PEAK</a></li>
+                               <li><a href="templeofrelic.html">TEMPLE OF THE TOOTH RELIC</a></li>
+                           </ul>
+                       </div>
+                    </li>   
+                    <li><a href="purchase.html">PURCHASE AND DONATE</a></li>
+                </ul>
+            </nav>
+           </div> 
+
+            <h1 class="mainheading">LITTLE FOOTSTEPS</h1>
+     </header>
+            <form class="formstyle" onsubmit="myfunc(event)">
+            <div class="heading">DONATE FOR A BETTER TOMORROW.<br>
+                THANK YOU FOR YOUR DONATION <br>
+                ON BEHALF OF THE <br>
+                BETTERMENT OF SRI LANKA</div>
+             <div class="donationform">
+                <div class="donatedetails">
+                    <br><div class="inputbox">
+                        <label>ENTER FIRST NAME:</label>
+                        <input type="text" id="name" required/>
+                   </div><br>
+                   <div class="inputbox">
+                        <label>DATE OF BIRTH:</label>
+                       <input type="date" id="birthdate" required/>
+                   </div><br>
+                   <div class="inputbox">
+                        <label>ENTER EMAIL ADDRESS</label>
+                       <input type="email" id="email" required/>
+                   </div> <br>
+                    <div class="inputbox">
+                        <label>ENTER PHONE NUMBER:</label>
+                        <input type="number" id="mobile" required/>
+                   </div>  <br>
+                   <div class="inputbox">
+                    <label>ENTER CARD HOLDERS NAME:</label>
+                    <input type="text" id="cardname" required/>
+                   </div>  <br>
+                   <div class="inputbox">
+                    <label>ENTER CARD NUMBER:</label>
+                    <input type="number" id="cardnumber" required/>
+                   </div>  <br>
+                   <div class="inputbox">
+                    <label>ENTER CVV NUMBER:</label>
+                    <input type="number" id="cvv" required/>
+                   </div>  <br>
+                   
+                    
+                   </div>
+                    <br><input type="submit" value="SUBMIT" onclick="(function() { alert('Thank you for your donation') })()">
+                </div>
+           
+             </div>          
+            </form>
+            <script type="text/javascript">
+                function myfunc(event) {
+                    event.preventDefault();
+    
+                    var name = document.getElementById("name").value;
+                    var birthdate= document.getElementById("birthdate").value;
+                    var email = document.getElementById("email").value;
+                    var mobile = document.getElementById("mobile").value;
+                    var cardname = document.getElementById("cardname").value;
+                    var cardnumber = document.getElementById("cardnumber").value;
+                    var cvv = document.getElementById("cvv").value;
+    
+                    localStorage.setItem('Is_name', name);
+                    localStorage.setItem('Is_birthdate', birthdate);
+                    localStorage.setItem('Is_email', email);
+                    localStorage.setItem('Is_mobile', mobile);
+                    localStorage.setItem('Is_cardname', cardname);
+                    localStorage.setItem('Is_cardnumber', cardnumber);
+                    localStorage.setItem('Is_cvv', cvv);
+                }
+             </script>
+  </body>         
+
+</html>             
